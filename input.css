@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: fraunces;
+    src: url(../fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf);
+}
+
+*{
+    font-family: fraunces;
+}
+
+header{
+    background: url(../images/desktop/image-header.jpg) top center;
+    height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* background-attachment:scroll; */
+}
+
+.bottom:hover .bottom1{
+    background-color: hsl(51, 100%, 49%) !important;
+}
+
+.bottom2:hover .bottom2{
+    background-color: hsl(7, 99%, 70%) !important;
+    color: hsl(168, 51%, 65%);
+}
+
+
+.nav::after{
+    content: "";
+    position: absolute;
+    border-left: 40px solid transparent;
+    border-right: 40px solid #fff;
+    border-bottom: 40px solid transparent;
+    border-top: 40px solid transparent;
+    right: 0;
+    top: -40px;
+}
+
+@media (max-width:1220px) {
+    
+}
+
+@media (max-width:575px) {
+    header{
+        background: url(../images/mobile/image-header.jpg) top center;
+        height: 100vh;
+        background-size:cover;
+        background-repeat: no-repeat;
+        /* background-position: 0% 100%; */
+    }
+}
